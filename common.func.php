@@ -11,6 +11,11 @@
  * @param null $app_config
  * @return bool
  */
-function is_shutdown($app_config = null) {
-    return false;
+function is_shutdown($app_config = null)
+{
+    if(defined('SERVER_SHUTDOWN') && SERVER_SHUTDOWN == true)
+    {
+        return true;
+    }
+    else return false;
 }
