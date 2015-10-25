@@ -19,3 +19,22 @@ function is_shutdown($app_config = null)
     }
     else return false;
 }
+
+function getManager($model,$reload = false)
+{
+    if(empty($_ENV['MODEL'][$model]) || $reload)
+    {
+        $manager_flie_name = MODEL.'/'.$model.'.Class.php';
+        $manager_class_name = $model.'Manager';
+        if(file_exists($manager_flie_name))
+        {
+            include_once $manager_flie_name;
+            $_ENV['MODEL'][$model] = new $manager_class_name();
+        }
+        else
+        {
+            $_ENV['MODEL'][$model]  = new Manager($model);
+        }
+    }
+    return $_ENV['MODEL'][$model];
+}
