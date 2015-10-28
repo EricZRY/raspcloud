@@ -6,4 +6,5 @@
  * Time: 12:38
  */
 
+define('ERROR_CRASH',-1);
 define('ERROR_CONFIG_INIT',1);

@@ -16,4 +16,12 @@ class MF
     {
         return getManager(MODEL_GLOBAL_CONFIG);
     }
+
+    /**
+     * @return TestManager
+     */
+    public static function getTestManager()
+    {
+        return getManager('Test');
+    }
 }
