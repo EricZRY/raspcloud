@@ -35,5 +35,6 @@ class  TestManager
         echo 'sfadsf'.self::$count = 99;
         $ret = file_put_contents($this->file_name,json_encode($this->onrow));
         if($ret == false) throw new Exception("Wrong!",ERROR_CRASH);
+        echo 'test complete';
     }
 }

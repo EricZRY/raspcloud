@@ -15,6 +15,14 @@ class global_configManager extends Manager
 
     public function getTest()
     {
-        return phpinfo();
+        //return phpinfo();
+        echo 'start';
+        try
+        {
+            call_user_func('fuck',true);
+        }catch (Exception $e)
+        {
+            echo 'hehe';
+        }
     }
 }

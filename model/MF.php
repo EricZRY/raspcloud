@@ -24,4 +24,12 @@ class MF
     {
         return getManager('Test');
     }
+
+    /**
+     * @return Test2Manager
+     */
+    public static function getTest2Manager()
+    {
+        return getManager('Test2');
+    }
 }

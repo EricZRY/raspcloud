@@ -24,5 +24,10 @@ $a = array(
 //$new_mgr->set($data);
 //$data2 = $test_mgr->get();
 //if($data2 != $data) echo 'hehe';
-echo 'count2'.TestManager::$count;
+//echo 'count2'.TestManager::$count;
+//$mgr = MF::getTest2Manager();
+//$ret = $mgr->test();
+//$ret = null;
+//$mgr = null;
+MF::getGlobalConfigManager()->getTest();
 
