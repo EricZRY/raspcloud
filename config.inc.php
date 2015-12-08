@@ -12,6 +12,7 @@ define('LOG_DIR', APP_ROOT.'/log/');
 define('FRAMEWORK', APP_ROOT . '/framework');
 define("MODEL", APP_ROOT . '/model');
 
+///lgn; angpnrgiunnnf paiioja []
 
 /** @noinspection PhpIncludeInspection */
 include APP_ROOT . '/constants/constants.model.php';
