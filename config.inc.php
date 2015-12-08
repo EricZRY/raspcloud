@@ -22,3 +22,5 @@ include FRAMEWORK . '/common.func.php';
 include APP_ROOT . '/common.func.php';
 /** @noinspection PhpIncludeInspection */
 include APP_ROOT .'/model/MF.php';
+
+//oasdf;o onoi[ionoioi oihoekfpmpmffmfmfmasdfpoasjfp]
